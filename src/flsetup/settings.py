@@ -30,7 +30,7 @@ def fl_running(prefix: Path):
 
 class SettingsWindow:
     def __init__(self, win, owner=None):
-        from .ui import ASSETS, Wizard, open_url, clean_env  # noqa: F401
+        from .ui import ASSETS, Wizard, open_url
         self.open_url = open_url
         self.win = win
         if owner is None:

@@ -23,9 +23,8 @@ def main(argv=None):
     if a.launch:
         from .ui import launch_fl
         sys.exit(0 if launch_fl() else 1)
-    try:
-        import tkinter  # noqa: F401
-    except ImportError:
+    import importlib.util
+    if importlib.util.find_spec("tkinter") is None:
         print("This program needs a graphical desktop.", file=sys.stderr)
         sys.exit(1)
     from . import ui
