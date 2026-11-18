@@ -5,6 +5,8 @@ on:
     branches: [main]
     tags: ["v*"]
   pull_request:
+  release:
+    types: [published]   # publishing a release on github.com also builds + attaches the AppImage
   workflow_dispatch:
 
 permissions:
