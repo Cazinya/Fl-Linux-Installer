@@ -1,0 +1,2 @@
+cabextract 1.12 (GPL-3.0-or-later), built statically from https://github.com/kyz/libmspack
+Used by winetricks to install Windows core fonts and GDI+.
